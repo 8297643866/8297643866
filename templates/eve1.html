@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'images/ratifyme.png' %}" alt="Brand Logo" class="d-inline-block align-text-top" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </nav>
+
+    {% block content %}
+    <section class="bg-light text-center p-5"> 
+      <div class="container"> 
+        <h1 class="display-4">HDFC Sales Pvt Ltd.</h1> 
+        <p class="lead">Join our team and make a difference at the state level.</p> 
+        <a href="#apply-form" class="btn btn-primary btn-lg">Apply Now</a> 
+      </div> 
+    </section>  
+    <section class="py-5"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col-md-8"> 
+            <h2>Job Description</h2> 
+            <p>Looking at our Business Growth & Expansion Plan at HDFC Sales Pvt. Ltd. for FY 2024-25, We believe that you have an incredible network and keen eye for talent. Hence, we are looking forward to your extended support to work on our immediate mandates for Bangalore. We are looking at hiring Sales Officers (Mortgage) across Bangalore. Below are the location wise vacancies for your reference. Job description is attached with this email.  
+
+ <br><br>
+
+              Kindly share profiles for below mentioned requirements. Please share CVs of the candidates along with the trackers at least one day prior scheduling the interview. No interviews will be entertained without prescribed tracker (Interview Tracker Format attached). 
+              
+               <br><br>
+              
+              Kindly loop in Myself, Vikas, Kiran and Porikana Achyuth in all trackers concerning recruitment for Karnataka Region. Also, recruitment partners are requested to share their contact details in the signature. 
+              <br><br>
+              
+              Below mentioned are the details pertaining to the recruitment drive for the month of Nov- 2024.
+              <br><br>
+              
+              Note: Not hiring Freshers, Line Up Only Experienced candidates from BFSI, NBFC and any Financial sales background only preferable.</p> 
+
+            <h2>Role/Functional Area:</h2>
+            <p>Sales/Business Development</p>
+            
+            <h2>Responsibilities</h2> 
+            <ol>
+              <li><h5>Area/ Lane /Geography Mapping: </h5>  <p>Responsible for lane to lane/ Area mapping of Area/ Geography at regular intervals with the help of supervisor. Identify new sources in the allocated Area/ Geography and inform the progress to reporting manager during team huddle. </p></li> 
+              <li><h5>Source Relationship Management: </h5> <p>Responsible for managing the relationship with all sources assigned and identified by him in his geography/area. </p></li> 
+              <li><h5>Maintain Reports:</h5> <p>Responsible for maintaining reports related to sales and all his activities in the prescribed format. Should maintain diary on daily basis in the prescribed format of activities. </p></li> 
+              <li><h5>Channel Partner Recruitment:</h5> <p>Responsible for identifying the need for appointment of a channel partner </p></li>
+              <li><h5>Team Huddle: </h5> <p>Responsible for attending team huddle on a daily basis as per the set process.  </p></li>
+              <li><h5>Customer Relationship Management: </h5><p>Responsible for enhancing the customer experience by developing and maintaining relationship with customers. </p></li>
+              <li><h5>Completion of File:</h5><p>Responsible for submission of complete application form, documentations and information </p></li>
+            </ol> 
+            <h2>Qualifications</h2> 
+            <ol> 
+              <li>Must be a graduate from any stream</li> 
+              <li>Should have minimum 6 months of experience in sales </li>
+              <li>Candidates with prior experience in BFSI will have an added advantage</li>
+              <li>Open to travel </li>
+              <li>Must have good communication skills</li>
+              </ol> 
+          </div> 
+        </div> 
+      </div> 
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-left">
+                    <h2>Job Details</h2>
+                    <ul class="list-unstyled">
+                        <li>Location: Bangalore, Goa</li>
+                        <li>Salary: Competitive</li>
+                        <li>Job Type: Full-time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="apply-form" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2>Apply Now</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="coverLetter" class="form-label">Cover Letter</label>
+                            <textarea class="form-control" id="coverLetter" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resume" class="form-label">Upload CV/Resume</label>
+                            <input type="file" class="form-control" id="resume" required>
+                        </div>
+                        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+
+    {% block foot %}
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 RatifyMe. All rights reserved.</p>
+        </div>
+    </footer>
+    {% endblock %}
+
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+</body>
+</html>
